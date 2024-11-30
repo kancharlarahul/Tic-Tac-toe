@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic-tac-toe</title>
+  </head>
+  <style>
+    main {
+      width: 100%;
+      height: 100vh;
+      background-color: yellowgreen;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 500px;
+
+      column-gap: 10px;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      font-size: 120px;
+      text-align: center;
+      color: #fff;
+
+    }
+    .resetbtn{
+        background-color: black;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+
+    }
+    #msg{
+          color: #fff;
+          font-size: 45px;
+        }
+        .msg-container{
+          height: 200px;
+
+        }
+        .hide{
+          display: none;
+        }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="newgame" class="resetbtn">New game</button></div>
+        <h1>Tic-tac-toe</h1>
+        <div class="boxes">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <button  id="reset" class="resetbtn">Reset</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
